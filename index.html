@@ -4,10 +4,62 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="./styles/history.css" />
+    <link rel="stylesheet" href="./styles/buttons.css" />
+    <link rel="stylesheet" href="./styles/nav.css" />
+    <link rel="stylesheet" href="./styles/globalstyles.css" />
+
+    <title>Sandefjord Fotball</title>
   </head>
+  <header>
+	<img src="./Resurser/MicrosoftTeams-image (1).png" alt="Logo of sandefjord fotball">
+  </header>
   <body>
-    <script src="js/script.js"></script>
+    <main>
+      <div class="buttons-container">
+        <button class="button-skin">Kjøp Billett</button>
+        <button class="button-skin">Resultater</button>
+        <button class="button-skin">Om oss</button>
+      </div>
+      <div class="history-container">
+        <div class="history-header">
+          <h2>Vår historie</h2>
+        </div>
+        <p>
+          Sandefjord fotballklubb, eller bare "Sandefjord" for enkelte, har en
+          fargerik historie full av opp- og nedturer. La meg fortelle deg en
+          versjon med en vri.
+          <br /><br />
+          Det hele begynte i 1918 da noen lokale fotballentusiaster samlet seg
+          for å stifte klubben. De var så ivrige etter å få det til å fungere,
+          at de spilte kamper selv om de ikke hadde en ball! De brukte en
+          bønnestengel som en slags fotball.
+          <br /><br />
+          Så kom dager med store suksesser, inkludert en periode på 1970-tallet
+          da Sandefjord vant serien fire år på rad, og spilte i Europa. Men selv
+          om det var gode tider, var det også noen utfordringer langs veien. For
+          eksempel var det en gang da laget måtte spille en kamp uten målvakt.
+          Så, i stedet for å ansette en profesjonell, valgte de å la publikum
+          velge en spiller fra tribunen til å være målvakt for kampen!
+          <br /><br />
+          Men uansett hva som skjedde, har Sandefjord-fansen alltid vært der for
+          å støtte laget. De har sunget, hoppet og feiret sammen gjennom både
+          opp- og nedturer. Og til slutt, er det kanskje det som gjør Sandefjord
+          til en så spesiell fotballklubb. La oss håpe at de vil fortsette å
+          gjøre oss stolte og underholde oss i mange år fremover!
+          <br /><br />
+          <p>Vi er blå!</p> 
+        </p>
+      </div>
+    </main>
+    <nav>
+      <button id="hamburgerBtn" class="hamburger">&#9776;</button>
+      <div id="dropdownMenu" class="hide">
+        <a href="#">Hjem</a>
+        <a href="#">Kjøp billetter</a>
+        <a href="#">Resultater</a>
+      </div>
+    </nav>
+    <script src="./script/nav.js"></script>
   </body>
 </html>
