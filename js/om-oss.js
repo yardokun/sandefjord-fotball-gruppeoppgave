@@ -1,6 +1,6 @@
 const playerPicture = document.querySelector(".player-picture");
 playerPicture.innerHTML = `<img src =
-  "http://api.lorem.space/image/face?w=300&h=300">`;
+  "https://api.lorem.space/image/face?w=150&h=150">`;
 
 const players = [
   { name: "Hugo Oliver Keto", image: "", playerNumber: "1", gender:"male" },
