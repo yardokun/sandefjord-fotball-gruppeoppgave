@@ -1,0 +1,29 @@
+.player-number {
+  font-size: 1.5rem;
+}
+.player-gender {
+  font-size: 1.5rem;
+}
+.player-picture {
+  display: flex;
+}
+
+.card-wrapper {
+  width: 100%;
+  margin: 10px;
+  display: flex;
+}
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  list-style: none;
+}
+body {
+  margin: none;
+}
+
+nav {
+  background-color: #03588c;
+  color: #f2f2f2;
+  display: flex;
+}
