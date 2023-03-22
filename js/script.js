@@ -10,17 +10,20 @@ const options = {
 };
 
 fetch(
-  "https://weatherapi-com.p.rapidapi.com/forecast.json?q=London&days=3",
+  "https://weatherapi-com.p.rapidapi.com/forecast.json?q=Sandefjord&days=3",
   options
 )
   .then((response) => response.json())
   .then((response) => {
+    console.log(response);
     weather.innerHTML = `<img src="https:${response.current.condition.icon}"/>`;
     console.log(response.forecast.forecastday);
     for (let i = 0; i < response.forecast.forecastday.length; i++) {
       console.log(response.forecast.forecastday[i]);
-      forecastDayOutput.innerHTML = `<p>Dato: ${response.forecast.forecastday[i].date}</p>
-      <p>Høyeste temperatur: ${response.forecast.forecastday[i].day.maxtemp_c}</p>`;
+      forecastDayOutput.innerHTML = `<span class="weather-title">By: <p class="weather-p">${response.location.name}</p></span>
+      <span class="weather-title">Dato: <p class="weather-p">${response.forecast.forecastday[i].date}</p></span>
+      <span class="weather-title">Høyeste temperatur: <p class="weather-p">${response.forecast.forecastday[i].day.maxtemp_c}</p></span>
+      <span class="weather-title">Laveste temperatur: <p class="weather-p">${response.forecast.forecastday[i].day.mintemp_c}</p></span>`;
     }
   })
   .catch((err) => console.error(err));
